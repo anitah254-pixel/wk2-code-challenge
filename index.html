@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
-        <title>My Shopping List</title>
-    </head>
-    <body>
-       <ul>
-        <li>Milk</li>
-       <li>Eggs</li>
-       <li>Bread</li>
-       <li>Sugar</li>
-       </ul> 
-       
-       <form>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <label for="input">
+        <input type="text" id="input" />
+      </label>
+      <button id="add-button">Add</button>
+    </div>
 
-        <label for="add">Add</label>
-        <input type="text" id="add" name="add" placeholder="Tomatoes"
+    <div>
+      <button id="clear-button">Clear</button>
 
-       </form>
-    </body>
+      <ul id="shopping-list">
+        <li>Sample Item <button id="mark-purchased">Mark Purchased</button></li>
+      </ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
